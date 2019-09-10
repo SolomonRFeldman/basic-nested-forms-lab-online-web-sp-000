@@ -14,8 +14,8 @@ class RecipesController < ApplicationController
   end
 
   def create
-    byebug
     @recipe = Recipe.create(recipe_params)
+    byebug
     redirect_to recipe_path(@recipe)
   end
   
