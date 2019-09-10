@@ -15,4 +15,14 @@ class RecipesController < ApplicationController
 
   def create
   end
+  
+  private
+  
+  def recipe_params
+    params.include(:recipe).permit(
+      :title,
+      
+    )  
+  end
+  
 end
