@@ -21,7 +21,7 @@ class RecipesController < ApplicationController
   def recipe_params
     params.include(:recipe).permit(
       :title,
-      
+      ingredients
     )  
   end
   
